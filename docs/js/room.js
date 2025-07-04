@@ -288,7 +288,10 @@ function dropPeg(event, row, col) {
         img.src = img.src.replace(/[^\/]*\.jpg$/, "banana.jpg");
         img.classList.add('pegInHole');
         img.alt = cult[pegType]?.string || "Altar";
-        pegDiv.appendChild(img);
+        const label = document.createElement("div");
+        label.className = "bananaLabel";
+        label.textContent = pegType.charAt(0).toUpperCase() + pegType.slice(1);
+        pegDiv.append(img, label);
 
         targetHole.appendChild(pegDiv);
         gridState[targetHole.id] = pegType;
