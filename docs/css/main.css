@@ -91,7 +91,7 @@ button:not(:active){
                                                                                        /*------BigBox-----*/
 
 #mainWrapper{
-    border: 0.1dvw solid transparent;
+    border: 0.1dvw solid white;
     /*border-image:  url(../images/border6.png) 30% round;*/
     
     border-image-width: 30% 8%;
